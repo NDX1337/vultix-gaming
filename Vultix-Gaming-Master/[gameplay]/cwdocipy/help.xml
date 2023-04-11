@@ -1,0 +1,32 @@
+<help>Commands for (Admins/SuperModerators/Moderators):
+	
+/stn [team] [newname] - set team name. example: "/stn 1 HHX"
+/stc [team] [colorcode] -set team color. example: "/stc 1 #FFFF00"
+/ap [team] - add a point. example: "/ap 1"
+/dp [team] - remove a point. example: "/dp 1"
+/sp [team] [value] - set points. example: "/sp 1 20"
+/rp - reset points.
+
+/specchat - toggle spectators chat. 
+/speckill - toggle spectators kill.
+/changetype - toggle script mode. (Clan War / PvP)
+/autopoints - toggle auto points.(Working only on [DD] maps)
+
+/team3 - toggle team3.
+/training - toggle training mode
+Training commands: /RES /FIX /GOD /SL /LL /DL /PUSH /BOOST
+
+/cst [hour] [minute] - set in-game time. example: "/cst 12 0"
+/csw [0-255] - set world weather. example: "/csw 0"
+
+stop - stop game speed.
+go - back game speed to 1.
+
+free - changing state cw to free.
+live - changing state cw to live.
+rlive - changing state cw to live if its free and restarting map.
+
+redo - start redo vote. (Doesn't work with /team3)
+
+F3 - toggle hud
+F4 - toggle settings window</help>

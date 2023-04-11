@@ -1,0 +1,40 @@
+<meta>
+	<info author="Wizu" type="script" version="1" description="Description Derby Clan War script"/>
+
+	<min_mta_version server="1.5.5-9.14060" client="1.5.5-9.14060" />
+
+	<script src="utilities.lua" type="shared"/>
+	<script src="client.lua" type="client" cache="false"/>
+	<script src="server.lua" type="server"/>
+
+	<export function="getDataForSync"/>
+	<export function="canPlayerChat"/>
+
+	<script src="colorpicker/picker.lua" type="client"/>
+
+	<file src="colorpicker/blank.png"/>
+	<file src="colorpicker/cursor.png"/>
+	<file src="colorpicker/dropdown.png"/>
+	<file src="colorpicker/h.png"/>
+	<file src="colorpicker/sv.png"/>
+
+	<config src="help.xml" type="client"/>
+
+	<settings>
+		<setting name="*team1Name" value="HHX" friendlyname="Tag" group="Team 1" examples="[HHX]" desc="Team 1 name"/>
+		<setting name="*team1Color" value="#FFFF00" friendlyname="Color" group="Team 1" examples="#FFFF00" desc="Team 1 color"/>
+
+		<setting name="*team2Name" value="CW" friendlyname="Tag" group="Team 2" examples="[CW]" desc="Team 2 name"/>
+		<setting name="*team2Color" value="#FF0000" friendlyname="Color" group="Team 2" examples="#FF0000" desc="Team 2 color"/>
+
+		<setting name="*cwHudKey" value="F6" friendlyname="Show hud" group="Settings" examples="F6" desc="Bounce this key to show/hide hud"/>
+	    <setting name="*cwPanelKey" value="F4" friendlyname="Settings Panel" group="Settings" examples="F4" desc="Bounce this key to open settings panel"/>
+	    <setting name="*specChat" value="true" friendlyname="Spectators chat" group="Settings" accept="true,false" desc="Turn spectators chat from start"/>
+	    <setting name="*specKill" value="true" friendlyname="Spectators kill" group="Settings" accept="true,false" desc="Turn spectators auto kill from start"/>
+	    <setting name="*autoPoints" value="true" friendlyname="Auto points" group="Settings" accept="true,false" desc="Turn auto-points from start"/>
+	    <setting name="*inAir" value="true" friendlyname="Accept in air" group="Settings" accept="true,false" desc="Allow accept redo when player in air"/>
+	    <setting name="*inWater" value="false" friendlyname="Accept in water" group="Settings" accept="true,false" desc="Allow accept redo when player in water"/>
+	</settings>
+
+	<oop>true</oop>
+</meta>

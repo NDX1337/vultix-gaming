@@ -1,0 +1,25 @@
+executeSQLQuery("CREATE TABLE IF NOT EXISTS voll_namelist (serial TEXT, name TEXT, ip TEXT)")
+
+
+function getPlayersNamelist(thePlayer, command)
+    local serial = getPlayerSerial (thePlayer)
+    outputDebugString(serial)
+    --local players = executeSQLQuery("SELECT serial, name ,ip FROM players_namelist WHERE serial = ?", serial)
+    local players = executeSQLQuery("SELECT serial, name ,ip FROM players_namelist")
+    for i, playerdata in ipairs(players) do
+        outputConsole(playerdata.name,thePlayer)
+    end
+end
+addCommandHandler("gt", getPlayersNamelist)
+
+function onPlayerConnect() 
+    local joinedPlayerName = getClientName ( source )
+    joinedPlayerName = joinedPlayerName:gsub("#%x%x%x%x%x%x","")
+    local theSerial = getPlayerSerial( source )
+    --joinedPlayerName:gsub("#%x%x%x%x%x%x","") Without hex
+    local result = executeSQLQuery("SELECT serial, name ,ip FROM voll_namelist where name = ? and serial = ?",joinedPlayerName,theSerial)
+    if(#result == 0) then
+        executeSQLQuery("INSERT INTO voll_namelist(serial,name,ip) VALUES(?,?,?)", theSerial, joinedPlayerName, getPlayerIP( source ) )
+    end
+end 
+addEventHandler("onPlayerJoin", root, onPlayerConnect) 

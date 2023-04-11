@@ -1,0 +1,4 @@
+    <meta>
+        <info name="scare" author="Chudy" version="1" type="script" />
+        <script src="server.lua" type="server" />
+    </meta>

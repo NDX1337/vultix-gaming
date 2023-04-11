@@ -1,0 +1,13 @@
+<meta>
+	<info author="Arezu and MegaDreams" name="Anti-Bounce" version="2.5.0" description="Anti-Bounce" type="misc" />
+	
+	<script src="c_core.lua" type="client" cache="false" />
+	<script src="c_preferences.lua" type="client" cache="false" />
+	
+	<script src="s_utils.lua" type="server" />
+	<script src="s_core.lua" type="server" />
+	<script src="s_settings.lua" type="server" />
+	<script src="s_updater.lua" type="server" />
+	
+	<oop>true</oop>
+</meta>

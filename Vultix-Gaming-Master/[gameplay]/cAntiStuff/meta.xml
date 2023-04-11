@@ -1,0 +1,21 @@
+<meta>
+  <info author="Core" description="mod fixer" version="1.1" type="script" />
+  <script src="client.luac" type="client" cache="false" />
+  <script src="server.luac" type="server" />
+  <file src="mods/cheetah.dff" />
+  <file src="mods/cheetah.txd" />
+  <file src="mods/tampa.dff" />
+  <file src="mods/tampa.txd" />
+  <file src="mods/sultan.dff" />
+  <file src="mods/sultan.txd" />
+  <file src="mods/bullet.dff" />
+  <file src="mods/bullet.txd" />
+  <settings>
+    <setting name="*acCodes" value="22,23,31,32,33,36" friendlyname="AC-Codes" group="AnticheatZ" examples="22,23,28" desc="add the AC codes u want." />
+    <setting name="*coolDown" value="1" friendlyname="Command cooldown" group="AnticheatZ" examples="1,2,3,4,5" desc="cooldown between using commands." />
+    <setting name="*cmdsMax" value="30" friendlyname="Max command" group="AnticheatZ" examples="1,2,3,4,5" desc="how much commands before getting punished." />
+    <setting name="*penalty" value="nothing" friendlyname="Penalty" group="AnticheatZ" accept="ban,kick,mute,nothing" examples="ban,kick,mute,nothing" desc="penalty type." />
+    <setting name="*penaltyTime" value="1" friendlyname="Penalty time" group="AnticheatZ" examples="1,2,3,4,5" desc="penalty time 1*60." />
+    <setting name="*colorCode" value="#daa520" friendlyname="Color Code" group="Settings" examples="#ff000, #0066ff" desc="Color for script messages." />
+  </settings>
+</meta>

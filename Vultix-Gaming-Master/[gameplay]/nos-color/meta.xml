@@ -1,0 +1,5 @@
+<meta>
+    <info author="voll" description="Nos color changer with commands"/>
+    <script src="client.lua" type="client" />
+    <file src="nos.fx" />
+</meta>

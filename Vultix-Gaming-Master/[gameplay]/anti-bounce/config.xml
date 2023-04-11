@@ -1,0 +1,102 @@
+<config>
+	<!-- 
+		 Do you want to show a little message in the chat telling everyone whose hard work creating the Anti-Bounce was?
+		 true = enabled, false = disabled, Default: true 
+	-->
+	<enablecredits>true</enablecredits>
+	
+	<!-- 
+		 What state the Anti-Bounce has to be at default for new players?
+		 true = enabled, false = disabled, Default: true 
+	-->
+	<defaultstate>true</defaultstate>
+	
+	<!-- 
+		 This message is shown when both commands as binds are set. Use %1 where the commands have to be shown and %2 where 
+		 the bind has to be shown.
+		 
+		 Value: String, 
+		 Default: #3A85D6[Anti-Bounce]: #ffffffToggle the Anti-Bounce with '#368DEB%1#ffffff' or by simply pressing '#368DEB%2#ffffff'.		 
+		 Attributes: disable (Disables the message when set to true. Default: false)
+	-->
+	<infomessage disable="false">#3A85D6[Anti-Bounce]: #ffffffToggle the Anti-Bounce with '#368DEB%1#ffffff' or by simply pressing '#368DEB%2#ffffff'.</infomessage>
+	
+	<!-- 
+		 This message is shown when either only the commands are enabled or a bind is set. Use %1 on the place they have to be shown.
+		 
+		 Value: String, 
+		 Default: #3A85D6[Anti-Bounce]: #ffffffToggle the Anti-Bounce with '#368DEB%1#ffffff'.		 
+		 Attributes: disable (Disables the message when set to true. Default: false)
+	-->
+	<infomessage2 disable="false">#3A85D6[Anti-Bounce]: #ffffffToggle the Anti-Bounce with '#368DEB%1#ffffff'.</infomessage2>
+	
+	<!-- 
+		 This message is shown whenever the Anti-Bounce is turned on/off. Use %1 wherever it should be replaced with either "disabled" or "enabled".
+		 Those are both also customizable under "disabledmessage" and "enabledmessage".
+		 
+		 Value: String, 
+		 Default: #3A85D6[Anti-Bounce]: #ffffffThe Anti-Bounce is now %1#ffffff.		 
+		 Attributes: disable (Disables the message when set to true. Default: false)
+	-->
+	<togglemessage disable="false">#3A85D6[Anti-Bounce]: #ffffffThe Anti-Bounce is now %1#ffffff.</togglemessage>
+	
+	<!-- 
+		 This message is shown when the player' preferences are loaded. Use %1 wherever the state should be replaced with either "disabled" or 
+		 "enabled". Those are both also customizable under "disabledmessage" and "enabledmessage".
+		 
+		 Value: String, 
+		 Default: #3A85D6[Anti-Bounce]: #ffffffYour #368DEBpreferences #ffffffare #368DEBloaded #ffffff|| Anti-Bounce is %1#ffffff.		 
+		 Attributes: disable (Disables the message when set to true. Default: false)
+	-->
+	<preferencemessage disable="false">#3A85D6[Anti-Bounce]: #ffffffYour #368DEBpreferences #ffffffare #368DEBloaded #ffffff|| Anti-Bounce is %1#ffffff.</preferencemessage>
+	
+	<!-- 
+		 This message is used in togglemessage and preferencemessage to show that the Anti-Bounce is disabled.
+		 
+		 Value: String, 
+		 Default: #ff0000disabled	
+	-->
+	<disabledmessage>#ff0000disabled</disabledmessage>
+	
+	<!-- 
+		 This message is used in togglemessage and preferencemessage to show that the Anti-Bounce is enabled.
+		 
+		 Value: String, 
+		 Default: #00ff00enabled	
+	-->
+	<enabledmessage>#00ff00enabled</enabledmessage>
+	
+	<!-- 
+		 You are able to specify what commands (separate each command with "," you want your players to be able to use to
+		 toggle the Anti-Bounce with.
+		 
+		 Value: String, 
+		 Default: ab		 
+		 Attributes: disable (Disables the use of commands when set to true. Default: false)
+	-->
+	<bouncecommands disable="false">ab</bouncecommands>
+	
+	<!-- 
+		 You are able to specify what key to set to bind the toggle feature of the Anti-Bounce can be used with.
+		 
+		 Value: String, 
+		 Default: f10		 
+		 Attributes: disable (Disables the use of a bind when set to true. Default: true)
+	-->
+	<bouncebind disable="true">f10</bouncebind>
+	
+	<!-- 
+		 Should the Anti-Bounce script check for updates and inform you about them?
+		 
+		 true = yes, false = no, Default: true 
+	-->
+	<checkupdates>true</checkupdates>
+	
+	<!-- 
+		Here you are able to specify after what interval (in milliseconds) the script should check for updates. This requires
+		checkupdates to be set on true.
+		 
+		Default: 1800000 
+	-->
+	<updatechecktimer>1800000</updatechecktimer>
+</config>
