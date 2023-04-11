@@ -6,6 +6,6 @@ The scripts are intended for Multi Theft Auto (GTA:SA)
 
 Hall of Vultix Legends:
 
-Reebok, Zeyad22, FeeBe, Tryhard, Rekkles, Ramone, Twistty, Funek, Z3ro-pux, OsO.cp, AvenkzPrendy, Vexo, Lothauwild, VollRasm, Shappex, JoinT, iPhone, syku, Khydra, F3NN, Xavier, Almex, Fruttos, Mastermind, Impossible, Geminator, KennyDE/HU, Kurato, Matrex, Interex, zrc, Moxing, Sentry and much more....
+Reebok, Zeyad22, FeeBe, Tryhard, VollRasm, Rekkles, Ramone, Twistty, Funek, Z3ro-pux, OsO.cp, AvenkzPrendy, Vexo, Lothauwild, Shappex, JoinT, iPhone, syku, Khydra, F3NN, Xavier, Almex, Fruttos, Mastermind, Impossible, Geminator, KennyDE/HU, Kurato, Matrex, Interex, zrc, Moxing, Sentry and much more....
 
 - NDX - ALEX97#9999
