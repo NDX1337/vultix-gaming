@@ -1,0 +1,34 @@
+<meta>
+    <info name="AE | Synchronization System" author="APOC.ZeYaD22#3377" description="Synchronizes accounts and ACL between all servers." version="1.0"/>
+    <min_mta_version server="1.5.4-9.11413" client="1.3.5-9.06054" />
+    <oop>true</oop>
+    <config src="help.xml" type="client"/>
+    <script src="json.lua" type="server" />
+    <script src="server.lua" type="server" />
+    <script src="addacl.lua" type="server" />
+    <script src="discord.lua" type="server" />
+    <script src="sync-panel.lua" type="server" />
+    <script src="ban-protection.lua" type="server" />
+    <script src="mmute.lua" type="server" />
+    <script src="miscellaneous.lua" type="server" />
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="stats-panel.lua" type="client" cache="false"/>
+    <script src="servers-panel.lua" type="client" cache="false"/>
+    <export function="handleSynchronization" http="true" />
+    <export function="handleAnotherServerGetting" http="true" />
+    <export function="handleAnotherServerUpdating" http="true" />
+    <export function="handleSyncCommand" http="true" />
+    <export function="handleGlobalCommand" http="true" />
+    <export function="onDiscordMessage" http="true" />
+    <export function="updateCWToAll"/>
+    <export function="sendCWScore"/>
+    <export function="sendDiscordMessage"/>
+    <export function="addToStatsDatabase"/>
+    <export function="resetStreak"/>
+    <export function="keepStatsLive" http="true"/>
+    <export function="removeStatsForSerial" http="true"/>
+    <export function="handleDiscordBotStart" http="true"/>
+    <export function="getPlayers" http="true"/>
+    <export function="getPlayersCount" http="true"/>
+    <export function="sendAdminChat" http="true"/>
+</meta>
